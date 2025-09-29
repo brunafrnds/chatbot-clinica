@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstração do Chatbot</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 80vh; flex-direction: column; text-align: center; }
+        h1 { color: #333; }
+        p { color: #666; }
+    </style>
+</head>
+<body>
+    <h1>Demonstração - Chatbot para Clínica Odontológica</h1>
+    <p>Clique no ícone de chat no canto inferior direito para iniciar a conversa.</p>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="chatbot-atendimento"
+      agent-id="1cefd3b2-a90c-4f7d-a9d8-ac4b2b7521b3"
+      language-code="pt-br">
+    </df-messenger>
+
+    </body>
+</html>
